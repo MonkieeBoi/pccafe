@@ -19,7 +19,7 @@ layout: base.njk
 
 <ul>
     {% for cat in cats %}
-        <li>{{ cat }}
+        <li>{% rawLabel cat %}
             <ul>
                 {% for sub in section.subsections %}
                     {% if (sub.category or 'Duplicates') == cat %}

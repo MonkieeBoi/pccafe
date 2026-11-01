@@ -24,7 +24,7 @@ noSearch: true
   {% if cats.length > 0 %}
     <ul>
       {% for cat in cats %}
-        <li>{{ cat }}
+        <li>{% rawLabel cat %}
           <ul>
             {% for sub in s.subsections %}
               {% if sub.category == cat %}
